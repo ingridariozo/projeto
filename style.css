@@ -139,10 +139,12 @@ footer {
   z-index: 1;
   right: 0;
   transform: translateY(-15%);
+
+  animation: slide-out 0.4s;
 }
 
 .dark #switch button {
-  left: 0;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -154,4 +156,24 @@ footer {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
+}
+
+/*animation*/
+@keyframes slide-in {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    right: 50%;
+  }
+
+  to {
+    right: 0;
+  }
 }
