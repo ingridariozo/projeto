@@ -41,11 +41,12 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
   /* border: 1px solid black; */
   margin: 56px auto 0px;
   /* pode deixar apenas com margin:auto vai ficar no lugar certo */
   padding: 0 24px;
+  max-width: 588px;
 }
 
 #profile {
